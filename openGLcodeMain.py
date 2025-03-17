@@ -97,6 +97,7 @@ def main():
 
 ################# Set viewport and projections #################
     # OpenGL 3D Setup 
+    glViewport(0, 0, 500, 500)
     glMatrixMode(GL_PROJECTION)
     glLoadIdentity()
     gluPerspective(45, display[0] / display[1], 0.1, 50.0)

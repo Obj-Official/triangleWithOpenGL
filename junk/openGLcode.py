@@ -56,7 +56,6 @@ def main():
     gluPerspective(45, (display[0] / display[1]), 0.1, 50.0)
     glMatrixMode(GL_MODELVIEW)
     glEnable(GL_DEPTH_TEST)
-
     
     glTranslatef(0, 0, -2)  # Move the object back to be visible
 
@@ -81,7 +80,7 @@ def main():
         draw_button(20, 20, 100, 40)   # Rotate Button
         draw_button(140, 20, 100, 40)  # Scale Button
 
-        pygame.display.flip()  # Swap buffers
+        # pygame.display.update()  # Swap buffers
 
     pygame.quit()
 
